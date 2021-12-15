@@ -1,0 +1,5 @@
+Serve para controlar o "meio de campo"
+
+recebe requisições
+Usa da camada model para obter os dados
+Usa da camada view para exibir os dados

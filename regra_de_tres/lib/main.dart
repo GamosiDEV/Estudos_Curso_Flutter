@@ -42,6 +42,18 @@ class _HomeState extends State<Home> {
     }
   }
 
+  void _resetFields(){
+    setState(() {
+      totalAController.text = '';
+      totalBController.text = '';
+      fracaoAController.text = '';
+      fracaoBController.text = '';
+      _result = 'Resultado';
+      _count = 0;
+    });
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,6 +61,12 @@ class _HomeState extends State<Home> {
         title: Text('Regra de Tres'),
         centerTitle: true,
         backgroundColor: Colors.teal,
+        actions: [
+          IconButton(
+            onPressed: _resetFields,
+            icon: const Icon(Icons.refresh),
+          )
+        ],
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(10),

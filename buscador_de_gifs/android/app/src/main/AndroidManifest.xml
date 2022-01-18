@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.buscador_de_gifs">
    <application
-        android:label="buscador_de_gifs"
+        android:label="Gifs do Bala"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
